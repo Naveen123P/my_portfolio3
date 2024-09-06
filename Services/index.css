@@ -1,0 +1,31 @@
+@keyframes move-radial-complementary {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .bg-radial-complementary {
+    background: radial-gradient(circle, rgba(96, 165, 250, 0.8), rgba(63, 11, 160, 0.8), rgba(82, 191, 228, 0.8));
+    background-size: 200% 200%;
+  }
+
+  .animate-bg-radial-complementary {
+    animation: move-radial-complementary 5s ease infinite;
+  }
+
+  @keyframes move-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-bg-gradient {
+    background-size: 200% 200%;
+    animation: move-gradient 5s ease infinite;
+  }

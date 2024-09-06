@@ -1,0 +1,96 @@
+.parent {
+    position: relative;
+    z-index: 1;
+  }
+  .child {
+    position: absolute;
+    z-index: 2;
+  }
+  .sibling {
+    position: absolute;
+    z-index: 1;
+  }
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+ }
+ .hero-section {
+    /* background: url('https://res.cloudinary.com/dywnwbcln/image/upload/v1725453277/s780wfwp8wwqzwk0zu7e.jpg') no-repeat center center/cover; */
+    /* background-image: url("https://res.cloudinary.com/dywnwbcln/image/upload/v1725453277/muieg8ugukyhujyalld1.png"); */
+    /* background-image: radial-gradient(#781205, #473722, #4d542e, black); */
+    height: calc(100vh - 5rem);
+    position: relative;
+    background-size: cover;
+}
+ .animate-gradient{
+    background-size: 200% 200%;
+    animation: gradient-move 1s linear infinite;
+ }
+
+ a{
+    display: block;
+ }
+ 
+ /* Custom CSS for additional styles or overrides */
+ .bg-primary-custom {
+    background-color: #1D4ED8; /* Custom primary color */
+}
+.text-primary-custom {
+    color: #1D4ED8; /* Custom primary text color */
+}
+.bg-secondary-custom {
+    background-color: #D97706; /* Custom secondary color */
+}
+.bg-accent-custom {
+    background-color: #6D28D9; /* Custom accent color */
+}
+.bg-background-custom {
+    background-color: #F3F4F6; /* Custom background color */
+}
+.text-text-custom {
+    color: #374151; /* Custom text color */
+}
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.carousel-control-prev {
+    left: 0;
+}
+.carousel-control-next {
+    right: 0;
+}
+
+
+
+
+@media screen and (min-width: 992px){
+    .my-carousel{
+        height: calc(100vh - 4rem);
+    }
+}

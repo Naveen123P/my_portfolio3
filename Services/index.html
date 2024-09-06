@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | MERN Stack Developer</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../Home/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="w-full h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-300 animate-bg-gradient">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-red-900 via-purple-500 via-white-500 to-green-500 text-white px-6 py-3 shadow-lg transform animate-gradient text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-semibold">MERN Developer</a>
+            <button id="navbar-toggler" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="navbar-menu" class="bg-gradient-to-t from-red-900 via-purple-500 via-white-500 to-green-500 text-white px-6 py-3 shadow-lg transform animate-gradient absolute hidden lg:flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 bg-white lg:bg-transparent text-black lg:text-white p-4 shadow-lg lg:shadow-none lg:static top-full left-0 lg:top-auto lg:left-auto">
+                <a href="../Home/index.html" class="hover:underline">Home</a>
+                <a href="../Services/index.html" class="hover:underline">Services</a>
+                <a href="../AboutMe/index.html" class="hover:underline">My Portfolio</a>
+                <a href="../ContactUs/index.html" class="hover:underline">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">My Services</h2>
+            <div class="flex flex-wrap -mx-4">
+                <!-- Web Development Service -->
+                <div class="w-full md:w-1/3 px-4 mb-6">
+                    <div class=" p-6 rounded-lg shadow-lg transition-transform transform hover:translate-y-[-10px] text-center">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Web Development</h5>
+                        <p class="text-gray-100">Full-stack web development using MongoDB, Express, React, and Node.js to build scalable, responsive web applications.</p>
+                    </div>
+                </div>
+
+                <!-- API Development Service -->
+                <div class="w-full md:w-1/3 px-4 mb-6">
+                    <div class="p-6 rounded-lg shadow-lg transition-transform transform hover:translate-y-[-10px] text-center">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="bi bi-box"></i>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">API Development</h5>
+                        <p class="text-gray-100">Design and develop RESTful APIs using Node.js and Express, ensuring secure and efficient data handling.</p>
+                    </div>
+                </div>
+
+                <!-- Full-Stack Application Service -->
+                <div class="w-full md:w-1/3 px-4 mb-6">
+                    <div class="p-6 rounded-lg shadow-lg transition-transform transform hover:translate-y-[-10px] text-center">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="bi bi-layers"></i>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Full-Stack Applications</h5>
+                        <p class="text-gray-100">Build complete full-stack applications from front-end to back-end, including database management with MongoDB.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to toggle navbar menu on small screens
+        document.getElementById('navbar-toggler').addEventListener('click', () => {
+            const menu = document.getElementById('navbar-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
